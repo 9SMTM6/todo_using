@@ -1,21 +1,5 @@
 #![doc = include_str!("../README.md")]
 
-#[macro_export]
-macro_rules! todo_using2 {
-    ([$($using_ident: ident),* $(,)?], $($message_arg:tt)+) => {
-        {$(
-            let __suppress_unused_warning = $using_ident;
-        )*};
-        core::todo!($($message_arg)+);
-    };
-    ($($using_ident: ident),* $(,)?) => {
-        {$(
-            let __suppress_unused_warning = $using_ident;
-        )*};
-        core::todo!();
-    };
-}
-
 #[doc(hidden)]
 #[macro_export]
 macro_rules! use_args {
