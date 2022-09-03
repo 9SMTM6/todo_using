@@ -6,7 +6,7 @@ A super small crate only exporting a single [macro-by-example](https://doc.rust-
 
 If you want to avoid yet another dependency, and don't need a fancy API, you can also just copy paste:
 
-```rs
+```
 #[macro_export]
 macro_rules! todo_using {
     ([$($using_ident: ident),* $(,)?], $($message_arg:tt)+) => {
@@ -24,7 +24,7 @@ macro_rules! todo_using {
 }
 ```
 
-for the extended version just [look into the source code](src/lib.rs#todo_using).
+for the extended version just [look into the source code](`todo_using`).
 
 ## Purpose of this crate
 For you as an enduser this crate mostly serves as
