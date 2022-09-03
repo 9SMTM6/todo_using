@@ -1,12 +1,13 @@
 [package]
 name = "todo_using"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["Samuel Maier <samuel.maier2@hotmail.de>"]
 description = "A super small crate only exporting a single macro to \"use\" parameters."
 keywords = ["todo", "TODO", "unused", "unused-variable", "scaffolding"]
 categories = ["rust-patterns", "development-tools::testing"]
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/9SMTM6/todo_using"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
